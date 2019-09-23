@@ -1,5 +1,13 @@
 body {
     background:#ECEEF1; 
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Helvetica Neue',Helvetica,Arial,san serif;
+    text-align: left
+}
+
+a {
+    text-decoration: none;
 }
 
 .header {
@@ -25,6 +33,7 @@ body {
     height: 48px;
     top: 0;
     right: 0;
+    color: white;
 }
 
 .title-img {
@@ -53,9 +62,20 @@ body {
     position: relative;
     top: 50%;
     left: 50%;
-    margin-left: -100px;
-    height: 300px;
-    width: 200px;
+    margin-left: -170px;
+    height: 600px;
+    width: 310px;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-btn {
+    color: blue;
+}
+
+form label input {
+    width: 100%;
+    border-radius: 5%;
 }
 
 .footer {
