@@ -1,8 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
 body {
     background:#ECEEF1; 
     font-size: 12px;
     line-height: 1.5;
-    font-family: 'Helvetica Neue',Helvetica,Arial,san serif;
+    font-family: "AvenirNext", "Avenir","Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left
 }
 
@@ -26,33 +75,60 @@ a {
 
 .header-button {
     background-color: blue;
-    position: absolute;
+    margin-right: 3vw;
+    position: relative;
     border-radius: 10%;
-    float: left;
-    width: 144px;
-    height: 48px;
+    float: right;
+    width: 100px;
+    height: 40px;
     top: 0;
     right: 0;
     color: white;
 }
 
 .title-img {
-    position: relative;
-    left: 50%;
-    margin-left: -100px;
-    padding-top: 22px;
-    width: 200px;
-    height: 90px;
+    width: 118px;
+    height: 50px;
+}
 
+.title-img-container {
+    position: relative;
+    padding-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .three-logos {
-    background-color: orange;
     position: relative;
-    left: 50%;
-    margin-left: -25px;
+    left: 25%;
     height: 50px;
-    width: 50px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.logo-icon {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.logo-text {
+    padding-right: 10px;
+
+}
+
+.form-container {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .main-form {
@@ -60,32 +136,44 @@ a {
     border: 1px solid gray;
     border-radius: 2%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    margin-left: -170px;
     height: 600px;
     width: 310px;
     padding: 30px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: center;
 }
 
-.form-btn {
-    color: blue;
+.form-title {
+    font-size: 24px;
 }
 
-form label input {
+.form-button {
+    width: 70vw;
+
+}
+
+.form-input {
+    display: inline-block;
     width: 100%;
-    border-radius: 5%;
+}
+
+.create-disclaimer {
+    font-style: italic;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 
 .footer {
-    border: 1px solid black;
-    position: relative;
-    bottom: 0;
-    left: 50%;
-    margin-left: -250px;
     height: auto;
-    width: 500px;
-    font-size: 14px;
+    width: 80vw;
+    font-size: 12px;
     text-align: center;
 }
