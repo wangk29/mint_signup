@@ -46,7 +46,14 @@ table {
   border-spacing: 0;
 }
 
+*, *::after, *::before {
 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;        
+}
 body {
     background:#ECEEF1; 
     font-size: 12px;
@@ -58,6 +65,7 @@ body {
 a {
     text-decoration: none;
 }
+
 
 .header {
     background-color: inherit;
@@ -136,32 +144,72 @@ a {
     border: 1px solid gray;
     border-radius: 2%;
     position: relative;
-    height: 600px;
-    width: 310px;
-    padding: 30px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: space-evenly;
-    justify-content: center;
+    height: 640px;
+    width: 350px;
+    padding: 20px;
 }
 
 .form-title {
-    font-size: 24px;
-}
-
-.form-button {
-    width: 70vw;
-
+    text-align: center;
+    font-size: 18px;
 }
 
 .form-input {
-    display: inline-block;
     width: 100%;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.form-button {
+    position: relative;
+    width: 80%;
+}
+
+.warning-label {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-size: .7em;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-link {
+
+    height: 2em;
+    width: 100vw;
+    text-align: center;
+    width: 100%;
+}
+
+.form-sub-header {
+    height: 2em;
+    text-align: center;
+    font-size: 12px;
+    width: 1
 }
 
 .create-disclaimer {
     font-style: italic;
+    height: 100%;
+    width: 100%;
 }
 
 .footer-container {
